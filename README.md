@@ -1,4 +1,4 @@
-Chinese description in my blog: https://zzero00.github.io
+Chinese description in my blog: https://zzero00.github.io/2022/01/17/libprotobuf-mutator-fuzzing-learning/
 
 # From
 
