@@ -40,11 +40,9 @@ DEFINE_PROTO_FUZZER(const TEST &test_proto) {
                     /* test.b will only be "VICTORY" or "DEFEAT" */
                     if (seed % 2) {
                         t->set_b("VICTORY");
-                        // t->set_a(0x6201);
                     }
                     else {
                         t->set_b("DEFEAT");
-                        // t->set_a(0x6363);
                     }
                 }
             );
