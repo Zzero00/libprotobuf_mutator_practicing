@@ -1,0 +1,13 @@
+# Target labels
+ external.protobuf
+# Source files and their labels
+/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/external.protobuf
+/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/external.protobuf.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/external.protobuf-complete.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-install.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-mkdir.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-download.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-update.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-patch.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-configure.rule
+/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf-stamp/external.protobuf-build.rule

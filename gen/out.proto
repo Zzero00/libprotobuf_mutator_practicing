@@ -1,0 +1,51 @@
+// See README.txt for information and build instructions.
+//
+// Note: START and END tags are used in comments to define sections used in
+// tutorials.  They are not part of the syntax for Protocol Buffers.
+//
+// To get an in-depth walkthrough of this file and the related examples, see:
+// https://developers.google.com/protocol-buffers/docs/tutorials
+
+// [START declaration]
+syntax = "proto2";
+package menuctf;
+
+// [END declaration]
+
+// [START messages]
+message AllocChoice {
+  required int32 size = 1;
+  required bytes content = 2;
+}
+
+message UpdateChoice {
+  required int32 idx = 1;
+  required int32 size = 2;
+  required bytes content = 3;
+}
+
+message DeleteChoice {
+  required int32 idx = 1;
+}
+
+message ViewChoice {
+  required int32 idx = 1;
+}
+
+message ExitChoice {
+}
+
+// Our address book file is just one of these.
+message ChoiceList {
+  message Choice {
+    oneof the_choice{
+      AllocChoice alloc_choice = 1;
+      UpdateChoice update_choice = 2;
+      DeleteChoice delete_choice = 3;
+      ViewChoice view_choice = 4;
+      ExitChoice exit_choice = 5;
+    }
+  }
+  repeated Choice choice = 1;
+}
+// [END messages]

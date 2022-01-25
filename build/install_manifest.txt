@@ -1,0 +1,17 @@
+/home/ubuntu/afl-libprotobuf-mutator/external/lib/cmake/libprotobuf-mutator/libprotobuf-mutatorTargets.cmake
+/home/ubuntu/afl-libprotobuf-mutator/external/lib/cmake/libprotobuf-mutator/libprotobuf-mutatorTargets-noconfig.cmake
+/home/ubuntu/afl-libprotobuf-mutator/external/lib/cmake/libprotobuf-mutator/libprotobuf-mutatorConfig.cmake
+/home/ubuntu/afl-libprotobuf-mutator/external/OFF/libprotobuf-mutator.pc
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/port/gtest.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/port/protobuf.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/binary_format.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/utf8_fix.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/random.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/text_format.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/weighted_reservoir_sampler.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/field_instance.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/libfuzzer/libfuzzer_mutator.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/libfuzzer/libfuzzer_macro.h
+/home/ubuntu/afl-libprotobuf-mutator/external/include/libprotobuf-mutator/src/mutator.h
+/home/ubuntu/afl-libprotobuf-mutator/external/lib/libprotobuf-mutator.a
+/home/ubuntu/afl-libprotobuf-mutator/external/lib/libprotobuf-mutator-libfuzzer.a

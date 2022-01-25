@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -fno-exceptions -Werror -Wall  -w -pthread  -rdynamic CMakeFiles/protoc.dir/home/ubuntu/afl-libprotobuf-mutator/build/external.protobuf/src/external.protobuf/src/google/protobuf/compiler/main.cc.o  -o protoc-3.17.3.0  -Wl,-rpath,:::::::::::::: libprotoc.a libprotobuf.a /usr/lib/x86_64-linux-gnu/libz.so 

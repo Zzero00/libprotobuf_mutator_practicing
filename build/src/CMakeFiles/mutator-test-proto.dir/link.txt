@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmutator-test-proto.a  CMakeFiles/mutator-test-proto.dir/mutator_test_proto2.pb.cc.o CMakeFiles/mutator-test-proto.dir/mutator_test_proto3.pb.cc.o
+/usr/bin/ranlib libmutator-test-proto.a

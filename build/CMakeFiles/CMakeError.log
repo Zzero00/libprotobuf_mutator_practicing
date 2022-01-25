@@ -1,0 +1,102 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cbdc9/fast && /usr/bin/make -f CMakeFiles/cmTC_cbdc9.dir/build.make CMakeFiles/cmTC_cbdc9.dir/build
+make[1]: Entering directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbdc9.dir/src.c.o
+/usr/bin/cc   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cbdc9.dir/src.c.o   -c /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cbdc9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbdc9.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_cbdc9.dir/src.c.o  -o cmTC_cbdc9 
+/usr/bin/ld: CMakeFiles/cmTC_cbdc9.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_cbdc9.dir/build.make:87: cmTC_cbdc9] Error 1
+make[1]: Leaving directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cbdc9/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test LIB_PROTO_MUTATOR_HAS_NO_COVERAGE failed with the following output:
+Change Dir: /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_89e59/fast && /usr/bin/make -f CMakeFiles/cmTC_89e59.dir/build.make CMakeFiles/cmTC_89e59.dir/build
+make[1]: Entering directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_89e59.dir/src.cxx.o
+/usr/bin/c++    -fPIC -DLIB_PROTO_MUTATOR_HAS_NO_COVERAGE -fsanitize-coverage=0   -fsanitize-coverage= -o CMakeFiles/cmTC_89e59.dir/src.cxx.o -c /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: missing argument to '-fsanitize-coverage='
+make[1]: *** [CMakeFiles/cmTC_89e59.dir/build.make:66: CMakeFiles/cmTC_89e59.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_89e59/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIB_PROTO_MUTATOR_HAS_SANITIZE_FUZZER failed with the following output:
+Change Dir: /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cec64/fast && /usr/bin/make -f CMakeFiles/cmTC_cec64.dir/build.make CMakeFiles/cmTC_cec64.dir/build
+make[1]: Entering directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cec64.dir/src.cxx.o
+/usr/bin/c++    -fPIC -DLIB_PROTO_MUTATOR_HAS_SANITIZE_FUZZER -fsanitize=fuzzer-no-link   -fsanitize=fuzzer-no-link -o CMakeFiles/cmTC_cec64.dir/src.cxx.o -c /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized argument to '-fsanitize=' option: 'fuzzer-no-link'
+c++: error: unrecognized argument to '-fsanitize=' option: 'fuzzer-no-link'
+make[1]: *** [CMakeFiles/cmTC_cec64.dir/build.make:66: CMakeFiles/cmTC_cec64.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cec64/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIB_PROTO_MUTATOR_HAS_NO_SANITIZE_FUZZER failed with the following output:
+Change Dir: /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3cfbb/fast && /usr/bin/make -f CMakeFiles/cmTC_3cfbb.dir/build.make CMakeFiles/cmTC_3cfbb.dir/build
+make[1]: Entering directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3cfbb.dir/src.cxx.o
+/usr/bin/c++    -fPIC -DLIB_PROTO_MUTATOR_HAS_NO_SANITIZE_FUZZER -fno-sanitize=fuzzer   -fno-sanitize=fuzzer -o CMakeFiles/cmTC_3cfbb.dir/src.cxx.o -c /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized argument to '-fno-sanitize=' option: 'fuzzer'
+c++: error: unrecognized argument to '-fno-sanitize=' option: 'fuzzer'
+make[1]: *** [CMakeFiles/cmTC_3cfbb.dir/build.make:66: CMakeFiles/cmTC_3cfbb.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3cfbb/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIB_PROTO_MUTATOR_HAS_WSTRING_CONVERSION failed with the following output:
+Change Dir: /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_57e76/fast && /usr/bin/make -f CMakeFiles/cmTC_57e76.dir/build.make CMakeFiles/cmTC_57e76.dir/build
+make[1]: Entering directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_57e76.dir/src.cxx.o
+/usr/bin/c++    -fPIC -DLIB_PROTO_MUTATOR_HAS_WSTRING_CONVERSION   -Wstring-conversion -o CMakeFiles/cmTC_57e76.dir/src.cxx.o -c /home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wstring-conversion'; did you mean '-Wsign-conversion'?
+make[1]: *** [CMakeFiles/cmTC_57e76.dir/build.make:66: CMakeFiles/cmTC_57e76.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ubuntu/afl-libprotobuf-mutator/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_57e76/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

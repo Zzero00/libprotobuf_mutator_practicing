@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprotobuf-mutator-libfuzzer.a  CMakeFiles/protobuf-mutator-libfuzzer.dir/libfuzzer_mutator.cc.o CMakeFiles/protobuf-mutator-libfuzzer.dir/libfuzzer_macro.cc.o
+/usr/bin/ranlib libprotobuf-mutator-libfuzzer.a

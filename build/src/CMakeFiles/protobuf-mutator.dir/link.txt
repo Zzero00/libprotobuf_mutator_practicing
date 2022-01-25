@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprotobuf-mutator.a  CMakeFiles/protobuf-mutator.dir/binary_format.cc.o CMakeFiles/protobuf-mutator.dir/mutator.cc.o CMakeFiles/protobuf-mutator.dir/text_format.cc.o CMakeFiles/protobuf-mutator.dir/utf8_fix.cc.o
+/usr/bin/ranlib libprotobuf-mutator.a
